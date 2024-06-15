@@ -30,3 +30,6 @@
 .nav-container img:hover{
     scale: 1.4;
 }
+img{
+    cursor: pointer;
+}

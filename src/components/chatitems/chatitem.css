@@ -12,7 +12,7 @@
   justify-content: space-between;
   padding: 10px 10px 10px 15px;
   transition: .3s all;
- 
+ cursor: pointer;
 }
 .chat_user_container img {
   width: 55px;
