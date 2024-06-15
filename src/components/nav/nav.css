@@ -1,0 +1,32 @@
+.nav-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding:6px;
+    
+    border: 1px solid rgba(0, 0, 0, 0.129);
+    /* box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.324), inset 0 -3px 10px rgba(0, 0, 0, 0.279); */
+    
+    width: 70px;
+    border-radius: .8rem;
+    height: 100%;
+    background: linear-gradient(to right bottom , rgba(204, 204, 255, 0.249),rgba(255, 186, 186, 0.203))
+
+}
+.nav-settings-icon img,.nav-chat-icon img{
+    width: 90%;
+    filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.45));
+    transition: .5s all;
+    
+}
+.nav-settings-icon,.nav-chat-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .7rem;
+    background: linear-gradient(to right bottom , rgba(109, 109, 255, 0.45),rgba(255, 116, 116, 0.432));
+}
+.nav-container img:hover{
+    scale: 1.4;
+}
