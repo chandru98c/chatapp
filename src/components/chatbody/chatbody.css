@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to right bottom,  #fff8d7,  #ffe4cd ,  #ffc4d4,#ffc0cc);
+  background: linear-gradient(to left top,  #ffe45d,  #ff3f3f ,  #ff3b70,#0741ff);
   height: 100vh;
 }
 .chat-body-container{
@@ -17,4 +17,5 @@
     background-color: #1A202F;
 display: flex;
 gap: 8px;
+overflow: hidden;
 }
