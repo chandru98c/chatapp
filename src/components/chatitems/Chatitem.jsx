@@ -15,10 +15,13 @@ const users = [
     { name: 'Peter', img: p2, last_msg: 'hii...', last_seen: '1:31 am' },
     { name: 'MJ', img: p8, last_msg: 'i knew it', last_seen: '6:30 am' },
     { name: 'Mark', img: p3, last_msg: 'yes', last_seen: '7:30 pm' },
-    { name: 'Antony', img: p7, last_msg: 'ok', last_seen: '1:31 amm' },
+    { name: 'Antony', img: p7, last_msg: 'ok', last_seen: '1:31 am' },
     { name: 'Clark', img: p4, last_msg: 'lol', last_seen: '6:30 am' },
     { name: 'Bruce', img: p6, last_msg: 'whatsapp', last_seen: '7:30 pm' },
-    { name: 'ALfred', img: p5, last_msg: 'the city needs...', last_seen: '1:31 amm' },
+    { name: 'ALfred', img: p5, last_msg: 'the city needs...', last_seen: '1:31 am' },
+    { name: 'Mark', img: p3, last_msg: 'yes', last_seen: '7:30 pm' },
+    { name: 'Antony', img: p7, last_msg: 'ok', last_seen: '1:31 am' },
+    { name: 'Clark', img: p4, last_msg: 'lol', last_seen: '6:30 am' },
   
 ]
 const chat_item = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '6px', width: '100%' }
