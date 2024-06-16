@@ -11,7 +11,7 @@
     min-width: 70px;
     border-radius: .8rem;
     height: 100%;
-    background: linear-gradient(to right bottom , rgba(204, 204, 255, 0.249),rgba(255, 186, 186, 0.203))
+    background: linear-gradient(to right bottom , #595959,#262626)
 
 }
 .nav-settings-icon img,.nav-chat-icon img{
@@ -25,7 +25,8 @@
     justify-content: center;
     align-items: center;
     border-radius: .7rem;
-    background: linear-gradient(to right bottom , rgba(109, 109, 255, 0.45),rgba(255, 116, 116, 0.432));
+    backdrop-filter: blur(15px) brightness(55%);
+    background: rgba(255, 255, 255, 0.429);
 }
 .nav-container img:hover{
     scale: 1.4;

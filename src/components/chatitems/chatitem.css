@@ -1,11 +1,8 @@
 .chat_user_container {
   border-radius: 0.7rem;
-  background: linear-gradient(
-    to right bottom,
-    rgba(109, 109, 255, 0.45),
-    rgba(255, 116, 116, 0.432)
-  );
-
+  backdrop-filter: blur(15px) brightness(65%);
+  background: rgba(255, 255, 255, 0.215);
+color: aliceblue;
   width: 100%;
   display: flex;
   align-items: center;
@@ -13,6 +10,7 @@
   padding: 10px 10px 10px 15px;
   transition: .3s all;
  cursor: pointer;
+
 }
 .chat_user_container img {
   width: 55px;
@@ -26,4 +24,8 @@
 }
 .chat_user_container:hover{
     scale: 1.05;
+}
+.chat-item-container{
+  overflow-y: auto;
+  overflow-x:hidden;
 }

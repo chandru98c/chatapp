@@ -1,6 +1,6 @@
 import React from 'react'
 import './user_info.css' 
-import p1 from '../../assets/images/p1.jpg'
+import p1 from '../../assets/images/p1.png'
 
 
 export default function User_info() {
@@ -12,7 +12,7 @@ export default function User_info() {
       <h3>Profile Info</h3>
       <img src={p1} style={{width:'140px'}} alt="" />
       <h2>Gwen</h2>
-      <p>Offline</p>
+      <p>Online</p>
 
     </div>
     </div></>

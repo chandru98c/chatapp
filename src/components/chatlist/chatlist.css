@@ -11,23 +11,23 @@
     min-width: 340px;
     border-radius: .8rem;
     height: 100%;
-    background: linear-gradient(to right bottom , rgba(204, 204, 255, 0.249),rgba(255, 186, 186, 0.203))
+    background: linear-gradient(to right bottom , #595959,#262626)
 
 }
 .chat-list-container input{
     border: none;
 background: transparent;
 width: 100%;
-color: rgb(24, 24, 24);
+color: rgb(255, 255, 255);
 font-weight: 600;
 font-size: 15px;
 }
 .chat-list-container input::placeholder{
-    color: rgb(24, 24, 24);
+    color: rgb(210, 210, 210);
   }
   .chat-list{
     border-radius: .7rem;
-    background: linear-gradient(to right bottom , rgba(109, 109, 255, 0.45),rgba(255, 116, 116, 0.432));
+    backdrop-filter: blur(15px) brightness(65%);
   
     
     width: 100%;

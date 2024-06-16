@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './msg.css';
-import p1 from '../../assets/images/p1.jpg';
-import arrow from '../../assets/images/backward-dynamic-color.png';
+import p1 from '../../assets/images/p1.png';
+
 import tools from '../../assets/images/tool-dynamic-color.png';
 
 export default function Msg() {
@@ -39,12 +39,12 @@ export default function Msg() {
                 <div className='msg-box-header'>
                     <div style={{ display: 'flex', gap: '20px' }}>
                         <div className='user-icon'>
-                            <img src={arrow} alt="" />
+                        
                             <img src={p1} alt="" />
                         </div>
                         <span>
                             <h4>Gwen</h4>
-                            <p>Offline</p>
+                            <p>typing...</p>
                         </span>
                     </div>
                     <div className='settings-icon'>
@@ -52,14 +52,36 @@ export default function Msg() {
                     </div>
                 </div>
 
+                <div className='message-container' style={{
+                    position: 'relative', overflowY: 'auto', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'flex-end', padding: ' 6px 18px '
+                }}>
 
-                {total_messages.map((message) => (
-                    <div key={message.id} className='sent-messages'>
-                        <p id='sent-msg'>{message.msg}</p>
-                        <p id='sent-time'>{message.sent_time}</p>
-                        <button onClick={() => deletemsg(message)}><i class='bx bxs-trash'></i></button>
+                    <div className='sent-messages r-msg'>
+                        <p id='sent-msg'>hi...</p>
+                        <p id='sent-time'>7.30 pm</p>
+
                     </div>
-                ))}
+                    <div className='sent-messages r-msg'>
+                        <p id='sent-msg'>long time noo see</p>
+                        <p id='sent-time'>7.30 pm</p>
+
+                    </div>
+                    <div className='sent-messages r-msg'>
+                        <p id='sent-msg'>whatsapp</p>
+                        <p id='sent-time'>7.31 pm</p>
+
+                    </div>
+
+
+                    {total_messages.map((message) => (
+                        <div key={message.id} className='sent-messages'>
+                            <p id='sent-msg'>{message.msg}</p>
+                            <p id='sent-time'>{message.sent_time}</p>
+                            <button onClick={() => deletemsg(message)}><i class='bx bxs-trash'></i></button>
+                        </div>
+                    ))}
+                    
+                    </div>
 
                 <div className='input-field-container'>
                     <input
