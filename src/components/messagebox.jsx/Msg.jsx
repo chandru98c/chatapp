@@ -32,6 +32,8 @@ export default function Msg() {
         setTotalMessages(resetTotalMessages);
     };
 
+
+
     return (
         <>
             <div className='msb-box-container'>
@@ -39,7 +41,7 @@ export default function Msg() {
                 <div className='msg-box-header'>
                     <div style={{ display: 'flex', gap: '20px' }}>
                         <div className='user-icon'>
-                        
+
                             <img src={p1} alt="" />
                         </div>
                         <span>
@@ -52,25 +54,29 @@ export default function Msg() {
                     </div>
                 </div>
 
-                <div className='message-container' style={{
-                    position: 'relative', overflowY: 'auto', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'flex-end', padding: ' 6px 18px '
-                }}>
+                <div className='message-container' >
 
+                    
                     <div className='sent-messages r-msg'>
-                        <p id='sent-msg'>hi...</p>
+                        <p id='sent-msg'>Just heard the funniest joke, reminds me of that time in high school.</p>
                         <p id='sent-time'>7.30 pm</p>
 
                     </div>
-                    <div className='sent-messages r-msg'>
-                        <p id='sent-msg'>long time noo see</p>
-                        <p id='sent-time'>7.30 pm</p>
-
+                    <div className='sent-messages'>
+                        <p id='sent-msg'>Oh, do share! I could use a laugh today.</p>
+                        <p id='sent-time'>7:30 pm</p>
                     </div>
+
                     <div className='sent-messages r-msg'>
-                        <p id='sent-msg'>whatsapp</p>
+                        <p id='sent-msg'>Why don't scientists trust atoms?</p>
                         <p id='sent-time'>7.31 pm</p>
 
                     </div>
+                    <div className='sent-messages'>
+                        <p id='sent-msg'>I have no idea, why?.</p>
+                        <p id='sent-time'>7:31 pm</p>
+                    </div>
+                    
 
 
                     {total_messages.map((message) => (
@@ -80,9 +86,8 @@ export default function Msg() {
                             <button onClick={() => deletemsg(message)}><i class='bx bxs-trash'></i></button>
                         </div>
                     ))}
-                    
-                    </div>
 
+                </div>
                 <div className='input-field-container'>
                     <input
                         type="text"
@@ -94,6 +99,8 @@ export default function Msg() {
                         <i className='bx bx-chevrons-right'></i>
                     </button>
                 </div>
+
+
 
             </div>
         </>

@@ -8,7 +8,7 @@ export default function Chatlist() {
     <div className='chat-list-container'>
     <div className='chat-list' style={{display:'flex', justifyContent:'space-between'}}>
         <img src={scope} alt="" style={{width:'50px'}}/>
-          <input type="text" placeholder="Search For Answers" />
+          <input type="text" placeholder="Search..." />
         </div>
         <Chatitem/>
     </div>
